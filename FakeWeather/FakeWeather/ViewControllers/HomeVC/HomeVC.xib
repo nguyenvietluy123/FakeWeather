@@ -12,6 +12,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="FakeWeather" customModuleProvider="target">
             <connections>
+                <outlet property="buttonView" destination="Oqh-le-0Ee" id="Hu0-4c-kWs"/>
+                <outlet property="inputCity" destination="qPY-DQ-06g" id="zzZ-kT-eqj"/>
+                <outlet property="inputCountry" destination="gTJ-Nz-J2X" id="7Xt-7Z-Mfn"/>
+                <outlet property="inputHighTemp" destination="vNM-N8-3J1" id="5gB-r5-rwv"/>
+                <outlet property="inputLowTemp" destination="pDx-9i-rA1" id="fxr-Dv-fDx"/>
+                <outlet property="inputOvercast" destination="TfD-1j-OjN" id="Fa8-OQ-uWq"/>
+                <outlet property="inputTemp" destination="vRg-eb-df2" id="agj-cp-lH5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,39 +38,227 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="hasLeft" value="NO"/>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DrQ-ub-BYw" customClass="KHView" customModule="FakeWeather" customModuleProvider="target">
-                    <rect key="frame" x="20" y="78" width="335" height="45.5"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCx-0I-vG1">
+                    <rect key="frame" x="0.0" y="110" width="375" height="557"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTJ-Nz-J2X" customClass="InputView" customModule="FakeWeather" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="335" height="45.5"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DrQ-ub-BYw" customClass="KHView" customModule="FakeWeather" customModuleProvider="target">
+                            <rect key="frame" x="32" y="0.0" width="311" height="45.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTJ-Nz-J2X" customClass="InputView" customModule="FakeWeather" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="311" height="45.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Country"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="gTJ-Nz-J2X" secondAttribute="trailing" id="Dtg-Ih-tMC"/>
+                                <constraint firstAttribute="bottom" secondItem="gTJ-Nz-J2X" secondAttribute="bottom" id="WWp-Vm-91Q"/>
+                                <constraint firstItem="gTJ-Nz-J2X" firstAttribute="top" secondItem="DrQ-ub-BYw" secondAttribute="top" id="Ysg-h1-Juj"/>
+                                <constraint firstItem="gTJ-Nz-J2X" firstAttribute="leading" secondItem="DrQ-ub-BYw" secondAttribute="leading" id="mOB-6Z-Lvn"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VId-uP-zUq" customClass="KHView" customModule="FakeWeather" customModuleProvider="target">
+                            <rect key="frame" x="32" y="73.5" width="311" height="45"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPY-DQ-06g" customClass="InputView" customModule="FakeWeather" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="311" height="45"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="City"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="qPY-DQ-06g" firstAttribute="top" secondItem="VId-uP-zUq" secondAttribute="top" id="Nxe-iW-heh"/>
+                                <constraint firstItem="qPY-DQ-06g" firstAttribute="leading" secondItem="VId-uP-zUq" secondAttribute="leading" id="QWm-Lt-Xi1"/>
+                                <constraint firstAttribute="bottom" secondItem="qPY-DQ-06g" secondAttribute="bottom" id="Ycf-3H-au6"/>
+                                <constraint firstAttribute="trailing" secondItem="qPY-DQ-06g" secondAttribute="trailing" id="j9D-Mc-NQf"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOU-Fe-HLN" customClass="KHView" customModule="FakeWeather" customModuleProvider="target">
+                            <rect key="frame" x="32" y="146.5" width="311" height="45.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRg-eb-df2" customClass="InputView" customModule="FakeWeather" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="311" height="45.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Temperature"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                            <integer key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="vRg-eb-df2" secondAttribute="trailing" id="GCw-uP-1rE"/>
+                                <constraint firstAttribute="bottom" secondItem="vRg-eb-df2" secondAttribute="bottom" id="KXh-wg-N54"/>
+                                <constraint firstItem="vRg-eb-df2" firstAttribute="top" secondItem="BOU-Fe-HLN" secondAttribute="top" id="Q3U-U2-Wgi"/>
+                                <constraint firstItem="vRg-eb-df2" firstAttribute="leading" secondItem="BOU-Fe-HLN" secondAttribute="leading" id="pwk-tm-zR8"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtg-8n-dIk" customClass="KHView" customModule="FakeWeather" customModuleProvider="target">
+                            <rect key="frame" x="32" y="220" width="311" height="45"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNM-N8-3J1" customClass="InputView" customModule="FakeWeather" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="311" height="45"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="High T°"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="vNM-N8-3J1" firstAttribute="top" secondItem="Xtg-8n-dIk" secondAttribute="top" id="2Pf-Ro-9lx"/>
+                                <constraint firstItem="vNM-N8-3J1" firstAttribute="leading" secondItem="Xtg-8n-dIk" secondAttribute="leading" id="J1T-N7-zh4"/>
+                                <constraint firstAttribute="trailing" secondItem="vNM-N8-3J1" secondAttribute="trailing" id="WwO-6v-wxW"/>
+                                <constraint firstAttribute="bottom" secondItem="vNM-N8-3J1" secondAttribute="bottom" id="fp9-lc-zMz"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOG-mU-yFN" customClass="KHView" customModule="FakeWeather" customModuleProvider="target">
+                            <rect key="frame" x="32" y="293.5" width="311" height="45"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDx-9i-rA1" customClass="InputView" customModule="FakeWeather" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="311" height="45"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Low T°"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="pDx-9i-rA1" secondAttribute="bottom" id="Cwq-qr-xeJ"/>
+                                <constraint firstItem="pDx-9i-rA1" firstAttribute="leading" secondItem="BOG-mU-yFN" secondAttribute="leading" id="Dpu-WB-3lb"/>
+                                <constraint firstAttribute="trailing" secondItem="pDx-9i-rA1" secondAttribute="trailing" id="Qvj-95-mBr"/>
+                                <constraint firstItem="pDx-9i-rA1" firstAttribute="top" secondItem="BOG-mU-yFN" secondAttribute="top" id="kET-p1-DAq"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRY-QX-UES" customClass="KHView" customModule="FakeWeather" customModuleProvider="target">
+                            <rect key="frame" x="32" y="366.5" width="311" height="45.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfD-1j-OjN" customClass="InputView" customModule="FakeWeather" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="311" height="45.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Overcast"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="TfD-1j-OjN" secondAttribute="bottom" id="5Jy-jJ-idX"/>
+                                <constraint firstAttribute="trailing" secondItem="TfD-1j-OjN" secondAttribute="trailing" id="DJH-ca-ngh"/>
+                                <constraint firstItem="TfD-1j-OjN" firstAttribute="top" secondItem="lRY-QX-UES" secondAttribute="top" id="Qtp-um-rln"/>
+                                <constraint firstItem="TfD-1j-OjN" firstAttribute="leading" secondItem="lRY-QX-UES" secondAttribute="leading" id="aJW-7y-59v"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oqh-le-0Ee" customClass="ButtonView" customModule="FakeWeather" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="442" width="375" height="85"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleStyle1Button" value="Next"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="gTJ-Nz-J2X" secondAttribute="bottom" id="Wrh-kp-rFf"/>
-                        <constraint firstItem="gTJ-Nz-J2X" firstAttribute="leading" secondItem="DrQ-ub-BYw" secondAttribute="leading" id="Ygj-so-G8G"/>
-                        <constraint firstItem="gTJ-Nz-J2X" firstAttribute="top" secondItem="DrQ-ub-BYw" secondAttribute="top" id="brL-hF-ReW"/>
-                        <constraint firstAttribute="trailing" secondItem="gTJ-Nz-J2X" secondAttribute="trailing" id="qSu-Od-13x"/>
+                        <constraint firstItem="Xtg-8n-dIk" firstAttribute="width" secondItem="BOU-Fe-HLN" secondAttribute="width" id="2fn-Fc-dNI"/>
+                        <constraint firstItem="VId-uP-zUq" firstAttribute="height" secondItem="DrQ-ub-BYw" secondAttribute="height" id="3Go-c8-d6b"/>
+                        <constraint firstItem="VId-uP-zUq" firstAttribute="width" secondItem="DrQ-ub-BYw" secondAttribute="width" id="4hm-j4-QyK"/>
+                        <constraint firstItem="DrQ-ub-BYw" firstAttribute="top" secondItem="MCx-0I-vG1" secondAttribute="top" id="5pb-3k-0Cm"/>
+                        <constraint firstItem="BOG-mU-yFN" firstAttribute="height" secondItem="Xtg-8n-dIk" secondAttribute="height" id="6Uc-l4-zPl"/>
+                        <constraint firstItem="BOU-Fe-HLN" firstAttribute="top" secondItem="VId-uP-zUq" secondAttribute="bottom" constant="28" id="9GA-H5-ebN"/>
+                        <constraint firstItem="Oqh-le-0Ee" firstAttribute="top" secondItem="lRY-QX-UES" secondAttribute="bottom" constant="30" id="C1V-pw-WD9"/>
+                        <constraint firstItem="lRY-QX-UES" firstAttribute="width" secondItem="BOG-mU-yFN" secondAttribute="width" id="InX-7N-3iv"/>
+                        <constraint firstItem="VId-uP-zUq" firstAttribute="top" secondItem="DrQ-ub-BYw" secondAttribute="bottom" constant="28" id="J08-nG-7JT"/>
+                        <constraint firstItem="Xtg-8n-dIk" firstAttribute="centerX" secondItem="BOU-Fe-HLN" secondAttribute="centerX" id="Kku-SD-85Q"/>
+                        <constraint firstItem="BOG-mU-yFN" firstAttribute="top" secondItem="Xtg-8n-dIk" secondAttribute="bottom" constant="28" id="Owd-d7-NEm"/>
+                        <constraint firstAttribute="trailing" secondItem="Oqh-le-0Ee" secondAttribute="trailing" id="PCM-g8-6eR"/>
+                        <constraint firstItem="DrQ-ub-BYw" firstAttribute="width" secondItem="MCx-0I-vG1" secondAttribute="width" multiplier="1031:1242" id="PGG-kS-kPd"/>
+                        <constraint firstItem="Xtg-8n-dIk" firstAttribute="height" secondItem="BOU-Fe-HLN" secondAttribute="height" id="Ptg-YD-lac"/>
+                        <constraint firstItem="lRY-QX-UES" firstAttribute="top" secondItem="BOG-mU-yFN" secondAttribute="bottom" constant="28" id="QzS-Zk-10d"/>
+                        <constraint firstItem="Oqh-le-0Ee" firstAttribute="leading" secondItem="MCx-0I-vG1" secondAttribute="leading" id="R8R-Wc-mdl"/>
+                        <constraint firstItem="lRY-QX-UES" firstAttribute="height" secondItem="BOG-mU-yFN" secondAttribute="height" id="RQf-5O-mre"/>
+                        <constraint firstAttribute="bottom" secondItem="Oqh-le-0Ee" secondAttribute="bottom" constant="30" id="TBb-lA-dKA"/>
+                        <constraint firstItem="BOU-Fe-HLN" firstAttribute="width" secondItem="VId-uP-zUq" secondAttribute="width" id="Tvt-OI-iSc"/>
+                        <constraint firstItem="VId-uP-zUq" firstAttribute="centerX" secondItem="DrQ-ub-BYw" secondAttribute="centerX" id="V4b-c2-BMG"/>
+                        <constraint firstItem="lRY-QX-UES" firstAttribute="centerX" secondItem="BOG-mU-yFN" secondAttribute="centerX" id="l3l-Jc-Z5D"/>
+                        <constraint firstItem="BOU-Fe-HLN" firstAttribute="centerX" secondItem="VId-uP-zUq" secondAttribute="centerX" id="l89-We-RuB"/>
+                        <constraint firstItem="DrQ-ub-BYw" firstAttribute="centerX" secondItem="MCx-0I-vG1" secondAttribute="centerX" id="oWu-gi-Wnb"/>
+                        <constraint firstItem="BOG-mU-yFN" firstAttribute="width" secondItem="Xtg-8n-dIk" secondAttribute="width" id="u6D-Ee-ZpS"/>
+                        <constraint firstItem="Xtg-8n-dIk" firstAttribute="top" secondItem="BOU-Fe-HLN" secondAttribute="bottom" constant="28" id="uIM-4S-zJy"/>
+                        <constraint firstItem="BOU-Fe-HLN" firstAttribute="height" secondItem="VId-uP-zUq" secondAttribute="height" id="yA1-Y7-VIm"/>
+                        <constraint firstItem="BOG-mU-yFN" firstAttribute="centerX" secondItem="Xtg-8n-dIk" secondAttribute="centerX" id="yef-nY-IJk"/>
                     </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="6"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="DrQ-ub-BYw" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="150:2208" id="6MF-Oe-JhY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MCx-0I-vG1" secondAttribute="trailing" id="7zY-mf-JbX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kO9-Ei-Jww" secondAttribute="trailing" id="BFn-Kq-VGb"/>
-                <constraint firstItem="DrQ-ub-BYw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Rck-r2-AJK"/>
                 <constraint firstItem="kO9-Ei-Jww" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Xhl-as-zNt"/>
+                <constraint firstItem="MCx-0I-vG1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aKk-N5-D7q"/>
                 <constraint firstItem="kO9-Ei-Jww" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="esO-VO-7EB"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DrQ-ub-BYw" secondAttribute="trailing" constant="20" id="f6H-X5-L9a"/>
-                <constraint firstItem="DrQ-ub-BYw" firstAttribute="top" secondItem="kO9-Ei-Jww" secondAttribute="bottom" constant="8" id="sxv-1l-exj"/>
+                <constraint firstItem="MCx-0I-vG1" firstAttribute="top" secondItem="kO9-Ei-Jww" secondAttribute="bottom" constant="40" id="gEX-WW-pnd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MCx-0I-vG1" secondAttribute="bottom" id="gj7-Lh-Iln"/>
+                <constraint firstItem="DrQ-ub-BYw" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="150:2208" id="pho-h4-0GN"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="130.40000000000001" y="144.3778110944528"/>
         </view>
     </objects>
 </document>

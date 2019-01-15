@@ -9,43 +9,17 @@
 import UIKit
 
 class ButtonView: UIView {
-    @IBOutlet weak var viewStyleLogin: UIView!
-    @IBOutlet weak var viewStyleRegister: UIView!
-    @IBOutlet weak var viewStyleFilter: UIView!
-    @IBOutlet weak var viewStyleCheckIn: UIView!
-    @IBOutlet weak var buttonStyleLogin: KHButton!
-    @IBOutlet weak var buttonStyleRegister: KHButton!
-    @IBOutlet weak var btnStyleFilterLeft: KHButton!
-    @IBOutlet weak var btnStyleFilterRight: KHButton!
-    @IBOutlet weak var btnCheckIn: KHButton!
+    @IBOutlet weak var viewStyle1Button: UIView!
+    @IBOutlet weak var viewStyle3Button: UIView!
+    @IBOutlet weak var viewChild3Button: UIView!
+    @IBOutlet weak var btn1Button: KHButton!
+    @IBOutlet weak var btn3ButtonLeft: KHButton!
+    @IBOutlet weak var btn3ButtonCenter: KHButton!
+    @IBOutlet weak var btn3ButtonRight: KHButton!
     
-    @IBInspectable open var titleStyleLogin: String = "" {
+    @IBInspectable open var titleStyle1Button: String = "" {
         didSet {
-            buttonStyleLogin.setTitle(titleStyleLogin.localized, for: .normal)
-        }
-    }
-    
-    @IBInspectable open var titleG2LeftStyleRegister: String = "" {
-        didSet {
-            buttonStyleRegister.setTitle(titleG2LeftStyleRegister.localized, for: .normal)
-        }
-    }
-    
-    @IBInspectable open var titleG2LeftStyleFilter: String = "" {
-        didSet {
-            buttonStyleRegister.setTitle(titleG2LeftStyleFilter.localized, for: .normal)
-        }
-    }
-    
-    @IBInspectable open var titleG2RightStyleFilter: String = "" {
-        didSet {
-            buttonStyleRegister.setTitle(titleG2RightStyleFilter.localized, for: .normal)
-        }
-    }
-    
-    @IBInspectable open var titleStyleCheckIn: String = "" {
-        didSet {
-            btnCheckIn.setTitle(titleStyleCheckIn.localized, for: .normal)
+            btn1Button.setTitle(titleStyle1Button.localized, for: .normal)
         }
     }
     
@@ -53,28 +27,12 @@ class ButtonView: UIView {
         didSet {
             switch style {
             case 1:
-                viewStyleLogin.isHidden = false
-                viewStyleRegister.isHidden = true
-                viewStyleFilter.isHidden = true
-                viewStyleCheckIn.isHidden = true
+                viewStyle1Button.isHidden = false
+                viewStyle3Button.isHidden = true
                 break
             case 2:
-                viewStyleLogin.isHidden = true
-                viewStyleRegister.isHidden = false
-                viewStyleFilter.isHidden = true
-                viewStyleCheckIn.isHidden = true
-                break
-            case 3:
-                viewStyleLogin.isHidden = true
-                viewStyleRegister.isHidden = true
-                viewStyleFilter.isHidden = false
-                viewStyleCheckIn.isHidden = true
-                break
-            case 4:
-                viewStyleLogin.isHidden = true
-                viewStyleRegister.isHidden = true
-                viewStyleFilter.isHidden = true
-                viewStyleCheckIn.isHidden = false
+                viewStyle1Button.isHidden = true
+                viewStyle3Button.isHidden = false
                 break
             default:
                 break
@@ -82,13 +40,52 @@ class ButtonView: UIView {
         }
     }
     
-    var handleStyleLoginAction: (() -> Void)?
-    var handleStyleRegisterAction: (() -> Void)?
-    var handleStyleFilterLeft: (() -> Void)?
-    var handleStyleFilterRight: (() -> Void)?
-    var handleStyleCheckIn: (() -> Void)?
-    var handleNotifyLeft: (() -> Void)?
-    var handleNotifyRight: (() -> Void)?
+    var index: Int = 1 {
+        didSet {
+            if style == 2 {
+                switch index {
+                case 1:
+                    addGradientLayer(viewSelect: btn3ButtonLeft, view1: btn3ButtonCenter, view2: btn3ButtonRight)
+                    break
+                case 2:
+                    addGradientLayer(viewSelect: btn3ButtonCenter, view1: btn3ButtonLeft, view2: btn3ButtonRight)
+                    break
+                case 3:
+                    addGradientLayer(viewSelect: btn3ButtonRight, view1: btn3ButtonCenter, view2: btn3ButtonLeft)
+                    break
+                default:
+                    break
+                }
+            }
+        }
+    }
+    
+    func addGradientLayer(viewSelect: KHButton, view1: KHButton, view2: KHButton) {
+        Common.gradient(UIColor.init("3688d4", alpha: 1.0), UIColor.init("1962ae", alpha: 1.0), view: viewSelect)
+        Common.gradient(UIColor.init("FFFFFF", alpha: 1.0), UIColor.init("FFFFFF", alpha: 1.0), view: view1)
+        Common.gradient(UIColor.init("FFFFFF", alpha: 1.0), UIColor.init("FFFFFF", alpha: 1.0), view: view2)
+        
+        for layer in view1.layer.sublayers! {
+            if(layer.name == "gradientLayer"){
+                layer.removeFromSuperlayer()
+            }
+        }
+        
+        for layer in view2.layer.sublayers! {
+            if(layer.name == "gradientLayer"){
+                layer.removeFromSuperlayer()
+            }
+        }
+        
+        viewSelect.setTitleColor(.white, for: .normal)
+        view1.setTitleColor(.black, for: .normal)
+        view2.setTitleColor(.black, for: .normal)
+    }
+    
+    var handleStyle1Button: (() -> Void)?
+    var handle3ButtonLeft: (() -> Void)?
+    var handle3ButtonCenter: (() -> Void)?
+    var handle3ButtonRight: (() -> Void)?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -118,27 +115,31 @@ class ButtonView: UIView {
                 }
             }
         }
+        
+        GCDCommon.mainQueue {
+            Common.gradient(UIColor.init("3688d4", alpha: 1.0), UIColor.init("1962ae", alpha: 1.0), view: self.viewChild3Button)
+            self.addGradientLayer(viewSelect: self.btn3ButtonLeft, view1: self.btn3ButtonCenter, view2: self.btn3ButtonRight)
+        }
+        
     }
     
     
-    @IBAction func actionStyleLogin(_ sender: Any) {
-        handleStyleLoginAction?()
-    }
-    
-    @IBAction func actionStyleRegister(_ sender: Any) {
-        handleStyleRegisterAction?()
-    }
-    
-    @IBAction func actionStyleFilterLeft(_ sender: Any) {
-        handleStyleFilterLeft?()
-    }
-    
-    @IBAction func actionStyleFilterRight(_ sender: Any) {
-        handleStyleFilterRight?()
-    }
-    
-    @IBAction func actionStyleCheckin(_ sender: Any) {
-        handleStyleCheckIn?()
+    @IBAction func actionStyle1Button(_ sender: Any) {
+        handleStyle1Button?()
     }
 
+    @IBAction func action3ButtonLeft(_ sender: Any) {
+        index = 1
+        handle3ButtonLeft?()
+    }
+    
+    @IBAction func action3ButtonCenter(_ sender: Any) {
+        index = 2
+        handle3ButtonCenter?()
+    }
+    
+    @IBAction func action3ButtonRight(_ sender: Any) {
+        index = 3
+        handle3ButtonRight?()
+    }
 }

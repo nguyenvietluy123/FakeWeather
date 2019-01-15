@@ -203,12 +203,22 @@ extension String {
 }
 
 extension UIView {
-    func roundCorners(corners:UIRectCorner, radius: CGFloat) {
+    func roundCorners(corners:UIRectCorner, radius: CGFloat, showBorder: Bool = false) {
         let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         let mask = CAShapeLayer()
         mask.path = path.cgPath
         self.layer.mask = mask
-        self.layer.masksToBounds = true
+        
+        if showBorder {
+            let borderPath = UIBezierPath.init(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+            let borderLayer = CAShapeLayer()
+            borderLayer.path = borderPath.cgPath
+            borderLayer.lineWidth = 1
+            borderLayer.strokeColor = UIColor.white.cgColor
+            borderLayer.fillColor = UIColor.clear.cgColor
+            borderLayer.frame = self.bounds
+            self.layer.addSublayer(borderLayer)
+        }
     }
     
     func blur()

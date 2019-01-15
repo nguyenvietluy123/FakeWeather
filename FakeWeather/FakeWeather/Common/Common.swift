@@ -91,6 +91,7 @@ class Common {
     
     class func gradient(_ firstColor: UIColor = UIColor.init("ffa45f", alpha: 1.0), _ secondColor: UIColor = UIColor.init("ff8769", alpha: 1.0), view: UIView){
         let gradientLayer = CAGradientLayer()
+        gradientLayer.name = "gradientLayer"
         gradientLayer.frame = view.bounds
         gradientLayer.colors = [secondColor.cgColor, firstColor.cgColor]
         gradientLayer.locations = [0.0, 1.0]

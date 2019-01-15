@@ -1,0 +1,1051 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		029D893CDEB7FF11F1E1F9419BAE2D6B /* Agrume-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90DCBA5887D0A37BBAB6AECE5171F0EF /* Agrume-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0B950F1A04D1FAC22D5058593D7733FA /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F2AD9BEEEF6CD269A738C8BBF4B35A5 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		12F8ABC2520E8746D25875F517DF9A65 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2742A8BD11C2ED6507CCBD87618CE3 /* IQKeyboardReturnKeyHandler.swift */; };
+		15AB88A9DFFCDC2C32CE4A209B0748D2 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1763D092870EADEE7F6B831AF1EA8B /* IQUIView+IQKeyboardToolbar.swift */; };
+		16E9396D13D83BA1EEAF76BDD461CEEA /* SwiftyGif-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A03B7EF964ED5910D01793D589C1A08 /* SwiftyGif-dummy.m */; };
+		17519CB47012ED42C2BE3D598FE34EAD /* AgrumeServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B233ADB0897694B47BD3D498969A2CD /* AgrumeServiceLocator.swift */; };
+		1EBFCCC7A3B05D748530DFE2976B90AB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E07FDD7E55EA55FBF154E89F56D34E5 /* Configuration.swift */; };
+		237DAEE11E2CEC5E61877E24A5997CD7 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572B99518A6B87B7A09A2C2E7AEAE65 /* IQKeyboardManagerConstantsInternal.swift */; };
+		24396F5BEABA5228565910CF40B23D3A /* Foundation+Agrume.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD69E1C2DB355539AF72F01BD2137A1F /* Foundation+Agrume.swift */; };
+		2607DC882A07856A9385C953F7FAF95E /* Pods-FakeWeather-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90D24036E4C276CC75B64C3573E95064 /* Pods-FakeWeather-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		291AFEE7A9753AFE07D7C2004608E79B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */; };
+		2F061797728C5488349A1685AFA7B80A /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BCA306BD6920EA15572F5CC15E6DD /* ImageDownloader.swift */; };
+		3C2121B41C79B8B072A9931CB0995744 /* UIKit+Agrume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD46FFFAEBA57F5EAA91D3824D8D64 /* UIKit+Agrume.swift */; };
+		424476294F878E892F546C3A6F538D09 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE9FEEFE2B44253AEC316ED804D1FF /* IQToolbar.swift */; };
+		4338BFDF4F80E46D59EB0D7596A94374 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F060CC3BBD6A02DE922E9BF191467 /* IQNSArray+Sort.swift */; };
+		468012BE23052ACFFC2013A21EF29AFA /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA71CF8C943362D91CEF274E65C0DB /* IQTextView.swift */; };
+		52CAFB6A8E4381733AA64EF6136063EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
+		60477B8F2776A3CF096169B5AD8FCFAD /* UIImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB65F2C98D758D06EE0F1EFFEA8E071 /* UIImage+SwiftyGif.swift */; };
+		6694AE06E4E7F0E8375A538064EB0F47 /* AgrumeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD6866B7D1DDA2C45E2C697E45B5A0 /* AgrumeDataSource.swift */; };
+		67112D918393965548184818D457E2A2 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4803481E8EA3474D41A01E8C872127A1 /* IQUIViewController+Additions.swift */; };
+		67DD4716C88A6C01B5CC29598C6D4FEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */; };
+		6A7AB74A27F6235C55F7A03F3070D01B /* Pods-FakeWeather-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C24E400FB012ED2580D9DDFA6768122E /* Pods-FakeWeather-dummy.m */; };
+		7AC884423BB3C8FA59C1E4FC1C3C2770 /* AgrumeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB4C5C09B63E3124BF2E8239E8277D /* AgrumeCell.swift */; };
+		871D9CB4607831099350B7C1344E8857 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 322CE537C1DC93A585E3C8A31B418434 /* IQKeyboardManagerSwift-dummy.m */; };
+		8908368324B05DFDD33658F612EFDEC5 /* Agrume.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C1DD3E0CE2DF03748EDCA2F5FDFAB1 /* Agrume.swift */; };
+		8B85623BD2D11646643F39153DA1AD92 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678C6C194C043EB4E656C9D0D891982 /* IQUIView+Hierarchy.swift */; };
+		8CC7422E15420CF19E62D6ECFDC8CB33 /* SwiftyGifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8246F26F22328735D4F49C32397216EB /* SwiftyGifManager.swift */; };
+		9B5B88FA469314348DF35C5698210D79 /* AgrumeOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F20F60184C73735806CFF255F5886CF /* AgrumeOverlayView.swift */; };
+		A0FE10DE5161FE0F03872B9BF074CDF8 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B0D257703672BC72E501C3EE5B516B /* IQKeyboardManagerConstants.swift */; };
+		A313BACF3404264CFC497EFA02BCCF3F /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF926407AD3B501691AFD72ADB8E06 /* IQUITextFieldView+Additions.swift */; };
+		A9D753DECAD22DC3EC0E4883CDE88DD8 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A701ADACEE35D34B718C658C64FF2620 /* IQBarButtonItem.swift */; };
+		B094AAA09DFF32C2882563DBDDDC2EA3 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F6702A88088B480CB84BCDD3BC5D9 /* IQPreviousNextView.swift */; };
+		B6B249FA5917EBFC7877FECF7B084250 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6512742BBBA805C3172F7A1FF8C74DC7 /* IQKeyboardManager.swift */; };
+		C4AB7C0FEDB2A2CCAED708962BCC54E9 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F511EAB3AE01F6B12458F1F539CABA0 /* IQTitleBarButtonItem.swift */; };
+		D128E5BF83FF61D83F7D3A53BF9A553F /* AgrumeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE705BD57C096E2AF0E3A32B2AD15D /* AgrumeImage.swift */; };
+		DCB802A93D4DB4B3E79DDB599CF18FE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89163E94743FDDD60913C47150E225B /* UIKit.framework */; };
+		E6E311E146994148D92421B6BFBF5AA7 /* UIImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E19E44CEEEE095D37D8B8C9EAF599 /* UIImageView+SwiftyGif.swift */; };
+		E771B9CC599D98EDCA546F10226E37BB /* Agrume-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF189321259E15BA213BBD5C9053472 /* Agrume-dummy.m */; };
+		E7DBD2B982B107189B8A08BBBC30A94E /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A490B55645CD8EE15DF4EF3C51F7242 /* IQInvocation.swift */; };
+		E9BE357D636B955D1CD548DB47488AA4 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40A003EDE7FED19A5A48AE34D9D62 /* IQUIScrollView+Additions.swift */; };
+		F45A5F9969FCF7D4753C28D642C6C4EB /* SwiftyGif-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB37AF2AE16CC161BC2D5EAFC539F766 /* SwiftyGif-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FC6C81B4CC60EDE8C57F3460937824A3 /* SwiftyGif.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EE8E49DE23040783989005D0C5E7D49 /* SwiftyGif.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43BDCE523A6B7EAE728A245852E182AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B9BAD632715904B1D896E21480666EA;
+			remoteInfo = SwiftyGif;
+		};
+		8ABFA86DD1FE70296C02E7FC74ED9853 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D84C8EC8DAA22DAD27B91389655AD8EF;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		B52673DE6364D7CD1C092E26A4181D0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 608E3F67A0904A127257C9F4BEC0EDF8;
+			remoteInfo = Agrume;
+		};
+		E579D3FDA8A3677BD3D2D9451FC3BC6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B9BAD632715904B1D896E21480666EA;
+			remoteInfo = SwiftyGif;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		045CED0D1975935BA45A2EBBB22047F6 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = IQKeyboardManagerSwift.modulemap; path = ../../Headers/Public/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		04F40A003EDE7FED19A5A48AE34D9D62 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		0580B6EE5693FB59927BEF6161464E39 /* Pods-FakeWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FakeWeather.release.xcconfig"; sourceTree = "<group>"; };
+		06C62C985895380CA6260E43A5C142BE /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		0B233ADB0897694B47BD3D498969A2CD /* AgrumeServiceLocator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AgrumeServiceLocator.swift; path = Agrume/AgrumeServiceLocator.swift; sourceTree = "<group>"; };
+		22FCC6813F73C353F012FE4F361B498A /* Pods-FakeWeather.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FakeWeather.modulemap"; sourceTree = "<group>"; };
+		322CE537C1DC93A585E3C8A31B418434 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		33B0D257703672BC72E501C3EE5B516B /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		355EC15E0834D48A52094C3E57CB6D87 /* libAgrume.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAgrume.a; path = libAgrume.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		3AB65F2C98D758D06EE0F1EFFEA8E071 /* UIImage+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+SwiftyGif.swift"; path = "SwiftyGif/UIImage+SwiftyGif.swift"; sourceTree = "<group>"; };
+		3D1763D092870EADEE7F6B831AF1EA8B /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		3E07FDD7E55EA55FBF154E89F56D34E5 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Agrume/Configuration.swift; sourceTree = "<group>"; };
+		3F20F60184C73735806CFF255F5886CF /* AgrumeOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AgrumeOverlayView.swift; path = Agrume/AgrumeOverlayView.swift; sourceTree = "<group>"; };
+		46B1A1F3BF5BBDEA53BF76FDC2228AB2 /* SwiftyGif-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-prefix.pch"; sourceTree = "<group>"; };
+		4803481E8EA3474D41A01E8C872127A1 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		4A490B55645CD8EE15DF4EF3C51F7242 /* IQInvocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQInvocation.swift; path = IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift; sourceTree = "<group>"; };
+		4C3BCA306BD6920EA15572F5CC15E6DD /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Agrume/ImageDownloader.swift; sourceTree = "<group>"; };
+		4C5D1D6A4E5E3843F528C02F90D0FE11 /* Pods-FakeWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FakeWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		4F2AD9BEEEF6CD269A738C8BBF4B35A5 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQKeyboardManagerSwift-umbrella.h"; path = "../../Headers/Public/IQKeyboardManagerSwift/IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		4F9DB048ECB7424281066D4FA1CD8DFC /* libSwiftyGif.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSwiftyGif.a; path = libSwiftyGif.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		583DF7B25F014BEE3B79D5725BEDDD4A /* Agrume-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Agrume-prefix.pch"; sourceTree = "<group>"; };
+		5EE8E49DE23040783989005D0C5E7D49 /* SwiftyGif.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyGif.h; path = SwiftyGif/SwiftyGif.h; sourceTree = "<group>"; };
+		5EEAF1437C3F9DF8D605527A90DBD679 /* Pods-FakeWeather-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FakeWeather-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5EF189321259E15BA213BBD5C9053472 /* Agrume-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Agrume-dummy.m"; sourceTree = "<group>"; };
+		63CD46FFFAEBA57F5EAA91D3824D8D64 /* UIKit+Agrume.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Agrume.swift"; path = "Agrume/UIKit+Agrume.swift"; sourceTree = "<group>"; };
+		6512742BBBA805C3172F7A1FF8C74DC7 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		65D870AF96ACDB653BAF60FA64748215 /* libPods-FakeWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FakeWeather.a"; path = "libPods-FakeWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66A270E1F1050BCC3F5BFFC8AE28CE96 /* Pods-FakeWeather-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FakeWeather-frameworks.sh"; sourceTree = "<group>"; };
+		6A03B7EF964ED5910D01793D589C1A08 /* SwiftyGif-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyGif-dummy.m"; sourceTree = "<group>"; };
+		7678C6C194C043EB4E656C9D0D891982 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		7A229B624E22C1BE45F1A4605E067FE7 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
+		7F511EAB3AE01F6B12458F1F539CABA0 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		8246F26F22328735D4F49C32397216EB /* SwiftyGifManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyGifManager.swift; path = SwiftyGif/SwiftyGifManager.swift; sourceTree = "<group>"; };
+		8ABE9FEEFE2B44253AEC316ED804D1FF /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		8C391B3BAE358BCF1168F3D5A0742FE8 /* libIQKeyboardManagerSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libIQKeyboardManagerSwift.a; path = libIQKeyboardManagerSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DAA71CF8C943362D91CEF274E65C0DB /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		90D24036E4C276CC75B64C3573E95064 /* Pods-FakeWeather-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FakeWeather-umbrella.h"; sourceTree = "<group>"; };
+		90DCBA5887D0A37BBAB6AECE5171F0EF /* Agrume-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Agrume-umbrella.h"; path = "../../Headers/Public/Agrume/Agrume-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97FB4C5C09B63E3124BF2E8239E8277D /* AgrumeCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AgrumeCell.swift; path = Agrume/AgrumeCell.swift; sourceTree = "<group>"; };
+		9AE4AA57A2FE8881860D6E8B76BDA562 /* Agrume.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = Agrume.modulemap; path = ../../Headers/Public/Agrume/Agrume.modulemap; sourceTree = "<group>"; };
+		A2375E030B15076B058F5E9EFC0D0E5B /* Pods-FakeWeather-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FakeWeather-resources.sh"; sourceTree = "<group>"; };
+		A4AD6866B7D1DDA2C45E2C697E45B5A0 /* AgrumeDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AgrumeDataSource.swift; path = Agrume/AgrumeDataSource.swift; sourceTree = "<group>"; };
+		A701ADACEE35D34B718C658C64FF2620 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		AB7E19E44CEEEE095D37D8B8C9EAF599 /* UIImageView+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+SwiftyGif.swift"; path = "SwiftyGif/UIImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
+		B572B99518A6B87B7A09A2C2E7AEAE65 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BB37AF2AE16CC161BC2D5EAFC539F766 /* SwiftyGif-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SwiftyGif-umbrella.h"; path = "../../Headers/Public/SwiftyGif/SwiftyGif-umbrella.h"; sourceTree = "<group>"; };
+		BE2742A8BD11C2ED6507CCBD87618CE3 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		C24E400FB012ED2580D9DDFA6768122E /* Pods-FakeWeather-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FakeWeather-dummy.m"; sourceTree = "<group>"; };
+		C9DE705BD57C096E2AF0E3A32B2AD15D /* AgrumeImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AgrumeImage.swift; path = Agrume/AgrumeImage.swift; sourceTree = "<group>"; };
+		D1AF926407AD3B501691AFD72ADB8E06 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		D25F060CC3BBD6A02DE922E9BF191467 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E4E38A1870F6927B81C1A12593018BB8 /* Agrume.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Agrume.xcconfig; sourceTree = "<group>"; };
+		E59B19E3635F0E63F700688BC82997F4 /* SwiftyGif.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = SwiftyGif.modulemap; path = ../../Headers/Public/SwiftyGif/SwiftyGif.modulemap; sourceTree = "<group>"; };
+		E5C1DD3E0CE2DF03748EDCA2F5FDFAB1 /* Agrume.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Agrume.swift; path = Agrume/Agrume.swift; sourceTree = "<group>"; };
+		E89163E94743FDDD60913C47150E225B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EA9F6702A88088B480CB84BCDD3BC5D9 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
+		EE62117A7346271417A0FE2923CCCCAA /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		FD69E1C2DB355539AF72F01BD2137A1F /* Foundation+Agrume.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Foundation+Agrume.swift"; path = "Agrume/Foundation+Agrume.swift"; sourceTree = "<group>"; };
+		FE1182B563B54A3890BD22B59DC4E936 /* Pods-FakeWeather-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FakeWeather-acknowledgements.plist"; sourceTree = "<group>"; };
+		FE34684EDE73453C6C5F30AF2446D7D5 /* SwiftyGif.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyGif.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		735224A6754BE8BED6DD468B68747BF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84704C24E443ACDF46AB4F24F9DF2628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C7C7A1326C49D557B4D09C3CE62A9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC47E9E01BACC323655A0233E41D55B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67DD4716C88A6C01B5CC29598C6D4FEC /* CoreGraphics.framework in Frameworks */,
+				52CAFB6A8E4381733AA64EF6136063EE /* Foundation.framework in Frameworks */,
+				291AFEE7A9753AFE07D7C2004608E79B /* QuartzCore.framework in Frameworks */,
+				DCB802A93D4DB4B3E79DDB599CF18FE1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53C8B4AB97860F06FE722851EA867B18 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16A30EFA378BC30E908A75A6D3AC4AF1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AE4AA57A2FE8881860D6E8B76BDA562 /* Agrume.modulemap */,
+				E4E38A1870F6927B81C1A12593018BB8 /* Agrume.xcconfig */,
+				5EF189321259E15BA213BBD5C9053472 /* Agrume-dummy.m */,
+				583DF7B25F014BEE3B79D5725BEDDD4A /* Agrume-prefix.pch */,
+				90DCBA5887D0A37BBAB6AECE5171F0EF /* Agrume-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Agrume";
+			sourceTree = "<group>";
+		};
+		1A680A3E5A42FEBA4B527E1152D36D6A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E59B19E3635F0E63F700688BC82997F4 /* SwiftyGif.modulemap */,
+				FE34684EDE73453C6C5F30AF2446D7D5 /* SwiftyGif.xcconfig */,
+				6A03B7EF964ED5910D01793D589C1A08 /* SwiftyGif-dummy.m */,
+				46B1A1F3BF5BBDEA53BF76FDC2228AB2 /* SwiftyGif-prefix.pch */,
+				BB37AF2AE16CC161BC2D5EAFC539F766 /* SwiftyGif-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyGif";
+			sourceTree = "<group>";
+		};
+		1EEECA97E5F20CEE37ECD3AAE2B5C002 /* SwiftyGif */ = {
+			isa = PBXGroup;
+			children = (
+				5EE8E49DE23040783989005D0C5E7D49 /* SwiftyGif.h */,
+				8246F26F22328735D4F49C32397216EB /* SwiftyGifManager.swift */,
+				3AB65F2C98D758D06EE0F1EFFEA8E071 /* UIImage+SwiftyGif.swift */,
+				AB7E19E44CEEEE095D37D8B8C9EAF599 /* UIImageView+SwiftyGif.swift */,
+				1A680A3E5A42FEBA4B527E1152D36D6A /* Support Files */,
+			);
+			name = SwiftyGif;
+			path = SwiftyGif;
+			sourceTree = "<group>";
+		};
+		2A3F89B205DEB74E2320C7F0F2B2830E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				355EC15E0834D48A52094C3E57CB6D87 /* libAgrume.a */,
+				8C391B3BAE358BCF1168F3D5A0742FE8 /* libIQKeyboardManagerSwift.a */,
+				65D870AF96ACDB653BAF60FA64748215 /* libPods-FakeWeather.a */,
+				4F9DB048ECB7424281066D4FA1CD8DFC /* libSwiftyGif.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53C8B4AB97860F06FE722851EA867B18 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */,
+				D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */,
+				B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */,
+				E89163E94743FDDD60913C47150E225B /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		61A462600A08E5EA6D0B48657065FC32 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				045CED0D1975935BA45A2EBBB22047F6 /* IQKeyboardManagerSwift.modulemap */,
+				7A229B624E22C1BE45F1A4605E067FE7 /* IQKeyboardManagerSwift.xcconfig */,
+				322CE537C1DC93A585E3C8A31B418434 /* IQKeyboardManagerSwift-dummy.m */,
+				EE62117A7346271417A0FE2923CCCCAA /* IQKeyboardManagerSwift-prefix.pch */,
+				4F2AD9BEEEF6CD269A738C8BBF4B35A5 /* IQKeyboardManagerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				CF5942DAD4D965B7AA11375FFBE9DC24 /* Pods */,
+				2A3F89B205DEB74E2320C7F0F2B2830E /* Products */,
+				D5AE8471B9DFF07C12E79C20102FAB6D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A065926F39A371D31904935AEB575BB8 /* Agrume */ = {
+			isa = PBXGroup;
+			children = (
+				E5C1DD3E0CE2DF03748EDCA2F5FDFAB1 /* Agrume.swift */,
+				97FB4C5C09B63E3124BF2E8239E8277D /* AgrumeCell.swift */,
+				A4AD6866B7D1DDA2C45E2C697E45B5A0 /* AgrumeDataSource.swift */,
+				C9DE705BD57C096E2AF0E3A32B2AD15D /* AgrumeImage.swift */,
+				3F20F60184C73735806CFF255F5886CF /* AgrumeOverlayView.swift */,
+				0B233ADB0897694B47BD3D498969A2CD /* AgrumeServiceLocator.swift */,
+				3E07FDD7E55EA55FBF154E89F56D34E5 /* Configuration.swift */,
+				FD69E1C2DB355539AF72F01BD2137A1F /* Foundation+Agrume.swift */,
+				4C3BCA306BD6920EA15572F5CC15E6DD /* ImageDownloader.swift */,
+				63CD46FFFAEBA57F5EAA91D3824D8D64 /* UIKit+Agrume.swift */,
+				16A30EFA378BC30E908A75A6D3AC4AF1 /* Support Files */,
+			);
+			name = Agrume;
+			path = Agrume;
+			sourceTree = "<group>";
+		};
+		AD03433C369F225FD61E715F8DB2BAC8 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				A701ADACEE35D34B718C658C64FF2620 /* IQBarButtonItem.swift */,
+				4A490B55645CD8EE15DF4EF3C51F7242 /* IQInvocation.swift */,
+				6512742BBBA805C3172F7A1FF8C74DC7 /* IQKeyboardManager.swift */,
+				33B0D257703672BC72E501C3EE5B516B /* IQKeyboardManagerConstants.swift */,
+				B572B99518A6B87B7A09A2C2E7AEAE65 /* IQKeyboardManagerConstantsInternal.swift */,
+				BE2742A8BD11C2ED6507CCBD87618CE3 /* IQKeyboardReturnKeyHandler.swift */,
+				D25F060CC3BBD6A02DE922E9BF191467 /* IQNSArray+Sort.swift */,
+				EA9F6702A88088B480CB84BCDD3BC5D9 /* IQPreviousNextView.swift */,
+				8DAA71CF8C943362D91CEF274E65C0DB /* IQTextView.swift */,
+				7F511EAB3AE01F6B12458F1F539CABA0 /* IQTitleBarButtonItem.swift */,
+				8ABE9FEEFE2B44253AEC316ED804D1FF /* IQToolbar.swift */,
+				04F40A003EDE7FED19A5A48AE34D9D62 /* IQUIScrollView+Additions.swift */,
+				D1AF926407AD3B501691AFD72ADB8E06 /* IQUITextFieldView+Additions.swift */,
+				7678C6C194C043EB4E656C9D0D891982 /* IQUIView+Hierarchy.swift */,
+				3D1763D092870EADEE7F6B831AF1EA8B /* IQUIView+IQKeyboardToolbar.swift */,
+				4803481E8EA3474D41A01E8C872127A1 /* IQUIViewController+Additions.swift */,
+				DA43C34FCAB79AA43D007A0356A06A7F /* Resources */,
+				61A462600A08E5EA6D0B48657065FC32 /* Support Files */,
+			);
+			name = IQKeyboardManagerSwift;
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		CCCB51A8A3C55A4A715500FABE49F8E9 /* Pods-FakeWeather */ = {
+			isa = PBXGroup;
+			children = (
+				22FCC6813F73C353F012FE4F361B498A /* Pods-FakeWeather.modulemap */,
+				5EEAF1437C3F9DF8D605527A90DBD679 /* Pods-FakeWeather-acknowledgements.markdown */,
+				FE1182B563B54A3890BD22B59DC4E936 /* Pods-FakeWeather-acknowledgements.plist */,
+				C24E400FB012ED2580D9DDFA6768122E /* Pods-FakeWeather-dummy.m */,
+				66A270E1F1050BCC3F5BFFC8AE28CE96 /* Pods-FakeWeather-frameworks.sh */,
+				A2375E030B15076B058F5E9EFC0D0E5B /* Pods-FakeWeather-resources.sh */,
+				90D24036E4C276CC75B64C3573E95064 /* Pods-FakeWeather-umbrella.h */,
+				4C5D1D6A4E5E3843F528C02F90D0FE11 /* Pods-FakeWeather.debug.xcconfig */,
+				0580B6EE5693FB59927BEF6161464E39 /* Pods-FakeWeather.release.xcconfig */,
+			);
+			name = "Pods-FakeWeather";
+			path = "Target Support Files/Pods-FakeWeather";
+			sourceTree = "<group>";
+		};
+		CF5942DAD4D965B7AA11375FFBE9DC24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A065926F39A371D31904935AEB575BB8 /* Agrume */,
+				AD03433C369F225FD61E715F8DB2BAC8 /* IQKeyboardManagerSwift */,
+				1EEECA97E5F20CEE37ECD3AAE2B5C002 /* SwiftyGif */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D5AE8471B9DFF07C12E79C20102FAB6D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCCB51A8A3C55A4A715500FABE49F8E9 /* Pods-FakeWeather */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DA43C34FCAB79AA43D007A0356A06A7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				06C62C985895380CA6260E43A5C142BE /* IQKeyboardManager.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		070C494E6F3FE5054D514C1DA5977C8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B950F1A04D1FAC22D5058593D7733FA /* IQKeyboardManagerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58E9D7A6E0E0F90AB1EB34D54C7C18B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2607DC882A07856A9385C953F7FAF95E /* Pods-FakeWeather-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD2F7E626035A066E4B6624225980B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45A5F9969FCF7D4753C28D642C6C4EB /* SwiftyGif-umbrella.h in Headers */,
+				FC6C81B4CC60EDE8C57F3460937824A3 /* SwiftyGif.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C1C571EE3852F5235241B76E5BDE59 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				029D893CDEB7FF11F1E1F9419BAE2D6B /* Agrume-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		608E3F67A0904A127257C9F4BEC0EDF8 /* Agrume */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49F10B81CB718FDC5A378DE1213C6239 /* Build configuration list for PBXNativeTarget "Agrume" */;
+			buildPhases = (
+				E489032FF271147CE66F96B6B6D118A9 /* Sources */,
+				84704C24E443ACDF46AB4F24F9DF2628 /* Frameworks */,
+				D1C1C571EE3852F5235241B76E5BDE59 /* Headers */,
+				4BAED7F525842A23A0DC99059BCD3289 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				150FC31074D0AAAEFD2B01630930B67C /* PBXTargetDependency */,
+			);
+			name = Agrume;
+			productName = Agrume;
+			productReference = 355EC15E0834D48A52094C3E57CB6D87 /* libAgrume.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8B9BAD632715904B1D896E21480666EA /* SwiftyGif */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0583375D2D2DDBA1302FCB0D76E712E7 /* Build configuration list for PBXNativeTarget "SwiftyGif" */;
+			buildPhases = (
+				75FC087E3A7D371C673DF73354237DAD /* Sources */,
+				92C7C7A1326C49D557B4D09C3CE62A9F /* Frameworks */,
+				CAD2F7E626035A066E4B6624225980B2 /* Headers */,
+				E54A404593346C99CF86C1BF5B87D5F9 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyGif;
+			productName = SwiftyGif;
+			productReference = 4F9DB048ECB7424281066D4FA1CD8DFC /* libSwiftyGif.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D84C8EC8DAA22DAD27B91389655AD8EF /* IQKeyboardManagerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B0F7203B6577C7A0B54A7E73B18DC90 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */;
+			buildPhases = (
+				AAC7917C8881573DD737F56989B12482 /* Sources */,
+				EDC47E9E01BACC323655A0233E41D55B /* Frameworks */,
+				070C494E6F3FE5054D514C1DA5977C8D /* Headers */,
+				DA2336CBDF9554E1FAF710CF803861DB /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQKeyboardManagerSwift;
+			productName = IQKeyboardManagerSwift;
+			productReference = 8C391B3BAE358BCF1168F3D5A0742FE8 /* libIQKeyboardManagerSwift.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FF3BC9A11B35CF27D00F56E36F1521A9 /* Pods-FakeWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38F01D2EBF54D498D34711566D591652 /* Build configuration list for PBXNativeTarget "Pods-FakeWeather" */;
+			buildPhases = (
+				05CCF25F067D8C9E9F19B010225224EE /* Sources */,
+				735224A6754BE8BED6DD468B68747BF1 /* Frameworks */,
+				58E9D7A6E0E0F90AB1EB34D54C7C18B5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC563CB93F14E2975B4211CECA8223CB /* PBXTargetDependency */,
+				3BA0242A2B5D38FBFED8E5F4EB8A2CF2 /* PBXTargetDependency */,
+				75DCC6046FCD7A35A27C44F3EE51B170 /* PBXTargetDependency */,
+			);
+			name = "Pods-FakeWeather";
+			productName = "Pods-FakeWeather";
+			productReference = 65D870AF96ACDB653BAF60FA64748215 /* libPods-FakeWeather.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2A3F89B205DEB74E2320C7F0F2B2830E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				608E3F67A0904A127257C9F4BEC0EDF8 /* Agrume */,
+				D84C8EC8DAA22DAD27B91389655AD8EF /* IQKeyboardManagerSwift */,
+				FF3BC9A11B35CF27D00F56E36F1521A9 /* Pods-FakeWeather */,
+				8B9BAD632715904B1D896E21480666EA /* SwiftyGif */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BAED7F525842A23A0DC99059BCD3289 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Agrume/Agrume.modulemap",
+				"${PODS_ROOT}/Headers/Public/Agrume/Agrume-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Agrume-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Agrume/Agrume.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Agrume/Agrume-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+		DA2336CBDF9554E1FAF710CF803861DB /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap",
+				"${PODS_ROOT}/Headers/Public/IQKeyboardManagerSwift/IQKeyboardManagerSwift-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/IQKeyboardManagerSwift/IQKeyboardManagerSwift-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+		E54A404593346C99CF86C1BF5B87D5F9 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/SwiftyGif/SwiftyGif.modulemap",
+				"${PODS_ROOT}/Headers/Public/SwiftyGif/SwiftyGif-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/SwiftyGif-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SwiftyGif/SwiftyGif.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SwiftyGif/SwiftyGif-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05CCF25F067D8C9E9F19B010225224EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7AB74A27F6235C55F7A03F3070D01B /* Pods-FakeWeather-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75FC087E3A7D371C673DF73354237DAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16E9396D13D83BA1EEAF76BDD461CEEA /* SwiftyGif-dummy.m in Sources */,
+				8CC7422E15420CF19E62D6ECFDC8CB33 /* SwiftyGifManager.swift in Sources */,
+				60477B8F2776A3CF096169B5AD8FCFAD /* UIImage+SwiftyGif.swift in Sources */,
+				E6E311E146994148D92421B6BFBF5AA7 /* UIImageView+SwiftyGif.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC7917C8881573DD737F56989B12482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D753DECAD22DC3EC0E4883CDE88DD8 /* IQBarButtonItem.swift in Sources */,
+				E7DBD2B982B107189B8A08BBBC30A94E /* IQInvocation.swift in Sources */,
+				B6B249FA5917EBFC7877FECF7B084250 /* IQKeyboardManager.swift in Sources */,
+				A0FE10DE5161FE0F03872B9BF074CDF8 /* IQKeyboardManagerConstants.swift in Sources */,
+				237DAEE11E2CEC5E61877E24A5997CD7 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				871D9CB4607831099350B7C1344E8857 /* IQKeyboardManagerSwift-dummy.m in Sources */,
+				12F8ABC2520E8746D25875F517DF9A65 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				4338BFDF4F80E46D59EB0D7596A94374 /* IQNSArray+Sort.swift in Sources */,
+				B094AAA09DFF32C2882563DBDDDC2EA3 /* IQPreviousNextView.swift in Sources */,
+				468012BE23052ACFFC2013A21EF29AFA /* IQTextView.swift in Sources */,
+				C4AB7C0FEDB2A2CCAED708962BCC54E9 /* IQTitleBarButtonItem.swift in Sources */,
+				424476294F878E892F546C3A6F538D09 /* IQToolbar.swift in Sources */,
+				E9BE357D636B955D1CD548DB47488AA4 /* IQUIScrollView+Additions.swift in Sources */,
+				A313BACF3404264CFC497EFA02BCCF3F /* IQUITextFieldView+Additions.swift in Sources */,
+				8B85623BD2D11646643F39153DA1AD92 /* IQUIView+Hierarchy.swift in Sources */,
+				15AB88A9DFFCDC2C32CE4A209B0748D2 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				67112D918393965548184818D457E2A2 /* IQUIViewController+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E489032FF271147CE66F96B6B6D118A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E771B9CC599D98EDCA546F10226E37BB /* Agrume-dummy.m in Sources */,
+				8908368324B05DFDD33658F612EFDEC5 /* Agrume.swift in Sources */,
+				7AC884423BB3C8FA59C1E4FC1C3C2770 /* AgrumeCell.swift in Sources */,
+				6694AE06E4E7F0E8375A538064EB0F47 /* AgrumeDataSource.swift in Sources */,
+				D128E5BF83FF61D83F7D3A53BF9A553F /* AgrumeImage.swift in Sources */,
+				9B5B88FA469314348DF35C5698210D79 /* AgrumeOverlayView.swift in Sources */,
+				17519CB47012ED42C2BE3D598FE34EAD /* AgrumeServiceLocator.swift in Sources */,
+				1EBFCCC7A3B05D748530DFE2976B90AB /* Configuration.swift in Sources */,
+				24396F5BEABA5228565910CF40B23D3A /* Foundation+Agrume.swift in Sources */,
+				2F061797728C5488349A1685AFA7B80A /* ImageDownloader.swift in Sources */,
+				3C2121B41C79B8B072A9931CB0995744 /* UIKit+Agrume.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		150FC31074D0AAAEFD2B01630930B67C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyGif;
+			target = 8B9BAD632715904B1D896E21480666EA /* SwiftyGif */;
+			targetProxy = 43BDCE523A6B7EAE728A245852E182AB /* PBXContainerItemProxy */;
+		};
+		3BA0242A2B5D38FBFED8E5F4EB8A2CF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManagerSwift;
+			target = D84C8EC8DAA22DAD27B91389655AD8EF /* IQKeyboardManagerSwift */;
+			targetProxy = 8ABFA86DD1FE70296C02E7FC74ED9853 /* PBXContainerItemProxy */;
+		};
+		75DCC6046FCD7A35A27C44F3EE51B170 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyGif;
+			target = 8B9BAD632715904B1D896E21480666EA /* SwiftyGif */;
+			targetProxy = E579D3FDA8A3677BD3D2D9451FC3BC6E /* PBXContainerItemProxy */;
+		};
+		BC563CB93F14E2975B4211CECA8223CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Agrume;
+			target = 608E3F67A0904A127257C9F4BEC0EDF8 /* Agrume */;
+			targetProxy = B52673DE6364D7CD1C092E26A4181D0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		063198AB09B9CDB3A695432FC17AD8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		2984F015AA95418AAD23DDAB92663CB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C5D1D6A4E5E3843F528C02F90D0FE11 /* Pods-FakeWeather.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FakeWeather/Pods-FakeWeather.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BE7388A4D6AB048BBF20F233685506E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE34684EDE73453C6C5F30AF2446D7D5 /* SwiftyGif.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyGif/SwiftyGif-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SwiftyGif/SwiftyGif.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SwiftyGif;
+				PRODUCT_NAME = SwiftyGif;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6391E50325F7DC56139B41ECFE337F47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A229B624E22C1BE45F1A4605E067FE7 /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87EAC867385563488A6D8F1E74AC46B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		966C7FF6B509BCE31FC4984D33FD0132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE34684EDE73453C6C5F30AF2446D7D5 /* SwiftyGif.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyGif/SwiftyGif-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SwiftyGif/SwiftyGif.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SwiftyGif;
+				PRODUCT_NAME = SwiftyGif;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C49CBF6EC6756CC581B239C18C50034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A229B624E22C1BE45F1A4605E067FE7 /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = IQKeyboardManagerSwift;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7231856683EB3E7E8E2545C6003FCDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4E38A1870F6927B81C1A12593018BB8 /* Agrume.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Agrume/Agrume-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/Agrume/Agrume.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Agrume;
+				PRODUCT_NAME = Agrume;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E97373EC64AB267922C70420648ED6B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0580B6EE5693FB59927BEF6161464E39 /* Pods-FakeWeather.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FakeWeather/Pods-FakeWeather.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F01B3E8736EEBCEDC411E18692ACEAAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4E38A1870F6927B81C1A12593018BB8 /* Agrume.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Agrume/Agrume-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/Agrume/Agrume.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Agrume;
+				PRODUCT_NAME = Agrume;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0583375D2D2DDBA1302FCB0D76E712E7 /* Build configuration list for PBXNativeTarget "SwiftyGif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BE7388A4D6AB048BBF20F233685506E /* Debug */,
+				966C7FF6B509BCE31FC4984D33FD0132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EAC867385563488A6D8F1E74AC46B4 /* Debug */,
+				063198AB09B9CDB3A695432FC17AD8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38F01D2EBF54D498D34711566D591652 /* Build configuration list for PBXNativeTarget "Pods-FakeWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2984F015AA95418AAD23DDAB92663CB1 /* Debug */,
+				E97373EC64AB267922C70420648ED6B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49F10B81CB718FDC5A378DE1213C6239 /* Build configuration list for PBXNativeTarget "Agrume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7231856683EB3E7E8E2545C6003FCDB /* Debug */,
+				F01B3E8736EEBCEDC411E18692ACEAAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B0F7203B6577C7A0B54A7E73B18DC90 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6391E50325F7DC56139B41ECFE337F47 /* Debug */,
+				9C49CBF6EC6756CC581B239C18C50034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

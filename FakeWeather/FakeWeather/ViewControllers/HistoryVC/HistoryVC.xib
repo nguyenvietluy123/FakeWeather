@@ -19,7 +19,32 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pt9-nM-oDH" customClass="NavigationView" customModule="FakeWeather" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="cjD-2u-Jfg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="History"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasLeft" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cZB-pl-VBZ">
+                    <rect key="frame" x="0.0" y="70" width="375" height="517"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Pt9-nM-oDH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ElM-Va-DZ9"/>
+                <constraint firstAttribute="trailing" secondItem="Pt9-nM-oDH" secondAttribute="trailing" id="LxB-w1-Dl1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cZB-pl-VBZ" secondAttribute="trailing" id="MT4-yK-tUN"/>
+                <constraint firstItem="Pt9-nM-oDH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kJQ-jO-tqV"/>
+                <constraint firstItem="cZB-pl-VBZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lyH-ut-4xR"/>
+                <constraint firstItem="cZB-pl-VBZ" firstAttribute="top" secondItem="Pt9-nM-oDH" secondAttribute="bottom" id="xPU-Tp-PoS"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

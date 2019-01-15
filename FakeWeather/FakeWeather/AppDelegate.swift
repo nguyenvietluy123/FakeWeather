@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var tabVC: UITabBarController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        if !isIPad {
+            IQKeyboardManager.shared.enable = true
+            IQKeyboardManager.shared.toolbarTintColor = .darkGray
+            IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "Ẩn"
+        }
+        
         initTabVC(0)
         return true
     }
