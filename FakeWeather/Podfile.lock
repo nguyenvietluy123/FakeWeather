@@ -1,24 +1,28 @@
 PODS:
-  - Agrume (5.2.3):
+  - Agrume (5.2.4):
     - SwiftyGif
+  - Google-Mobile-Ads-SDK (7.37.0)
   - IQKeyboardManagerSwift (6.2.0)
   - SwiftyGif (4.2.0)
 
 DEPENDENCIES:
   - Agrume
+  - Google-Mobile-Ads-SDK
   - IQKeyboardManagerSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Agrume
+    - Google-Mobile-Ads-SDK
     - IQKeyboardManagerSwift
     - SwiftyGif
 
 SPEC CHECKSUMS:
-  Agrume: 59d529a133e007544d95b263e9f6ff5937cbb571
+  Agrume: 1951b37521e35805de416aa9387315a62e6bb686
+  Google-Mobile-Ads-SDK: d028682d7450749a1955679da050eaf70d997b3e
   IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
   SwiftyGif: a149bf84df23370592f3f075561ae02c8632a314
 
-PODFILE CHECKSUM: 8257d62d6e115bb0fdf89dad489eb5fe1b0c69b4
+PODFILE CHECKSUM: 062fc09376b0a5a2f457a0b41e3c0f1d2e07725d
 
 COCOAPODS: 1.5.3

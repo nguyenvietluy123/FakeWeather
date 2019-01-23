@@ -11,9 +11,7 @@ import UIKit
 class CellHome: UITableViewCell {
     @IBOutlet weak var lbTitle: KHLabel!
     @IBOutlet weak var tfValue: KHTextField!
-    
     @IBOutlet weak var viewInput: UIView!
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,14 +20,5 @@ class CellHome: UITableViewCell {
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        
-    }
-    
-}
-
-extension CellHome {
-    func config() {
-        
-    }
+    }   
 }

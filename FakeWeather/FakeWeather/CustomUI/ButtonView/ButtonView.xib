@@ -30,32 +30,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qY-FB-b3z">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCc-hg-zKh" customClass="KHButton" customModule="FakeWeather" customModuleProvider="target">
-                            <rect key="frame" x="68" y="13" width="278" height="44"/>
-                            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="25"/>
-                            <state key="normal" title="Next">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
-                            </userDefinedRuntimeAttributes>
-                            <connections>
-                                <action selector="actionStyle1Button:" destination="-1" eventType="touchUpInside" id="yB7-lb-WRj"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstItem="aCc-hg-zKh" firstAttribute="centerX" secondItem="2qY-FB-b3z" secondAttribute="centerX" id="2qd-WQ-Sqd"/>
-                        <constraint firstItem="aCc-hg-zKh" firstAttribute="height" secondItem="2qY-FB-b3z" secondAttribute="height" multiplier="50:80" id="IGl-eG-bKl"/>
-                        <constraint firstItem="aCc-hg-zKh" firstAttribute="width" secondItem="2qY-FB-b3z" secondAttribute="width" multiplier="278:414" id="RJK-t6-73z"/>
-                        <constraint firstItem="aCc-hg-zKh" firstAttribute="centerY" secondItem="2qY-FB-b3z" secondAttribute="centerY" id="kTJ-7J-sfq"/>
-                    </constraints>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJq-kE-r5x">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                     <subviews>
@@ -169,6 +143,32 @@
                         <constraint firstItem="Edh-Rk-zsd" firstAttribute="centerX" secondItem="HJq-kE-r5x" secondAttribute="centerX" id="I55-5s-6w5"/>
                         <constraint firstItem="Edh-Rk-zsd" firstAttribute="width" secondItem="HJq-kE-r5x" secondAttribute="width" multiplier="500:732" id="JoY-Y4-Yfq"/>
                         <constraint firstItem="Edh-Rk-zsd" firstAttribute="centerY" secondItem="HJq-kE-r5x" secondAttribute="centerY" id="aC5-VY-DDe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qY-FB-b3z">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCc-hg-zKh" customClass="KHButton" customModule="FakeWeather" customModuleProvider="target">
+                            <rect key="frame" x="82" y="13" width="250" height="44"/>
+                            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="25"/>
+                            <state key="normal" title="Next">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionStyle1Button:" destination="-1" eventType="touchUpInside" id="yB7-lb-WRj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="aCc-hg-zKh" firstAttribute="centerX" secondItem="2qY-FB-b3z" secondAttribute="centerX" id="2qd-WQ-Sqd"/>
+                        <constraint firstItem="aCc-hg-zKh" firstAttribute="height" secondItem="2qY-FB-b3z" secondAttribute="height" multiplier="50:80" id="IGl-eG-bKl"/>
+                        <constraint firstItem="aCc-hg-zKh" firstAttribute="width" secondItem="2qY-FB-b3z" secondAttribute="width" multiplier="250:414" id="RJK-t6-73z"/>
+                        <constraint firstItem="aCc-hg-zKh" firstAttribute="centerY" secondItem="2qY-FB-b3z" secondAttribute="centerY" id="kTJ-7J-sfq"/>
                     </constraints>
                 </view>
             </subviews>

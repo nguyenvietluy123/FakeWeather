@@ -5,5 +5,5 @@ target 'FakeWeather' do
 
 pod 'Agrume'
 pod 'IQKeyboardManagerSwift'
-
+pod 'Google-Mobile-Ads-SDK'
 end

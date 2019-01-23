@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationView" customModule="FakeWeather" customModuleProvider="target">
             <connections>
+                <outlet property="imgLeft" destination="Ujw-UO-7Mi" id="4oy-pw-7W1"/>
                 <outlet property="lbTitleNav" destination="XPi-rA-h6h" id="SaP-g9-2JS"/>
                 <outlet property="viewLeft" destination="JG2-uI-hsN" id="pGV-zz-CpD"/>
             </connections>
@@ -47,10 +48,10 @@
                                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JG2-uI-hsN">
                                     <rect key="frame" x="5" y="0.0" width="37.333333333333336" height="44"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navi_back" translatesAutoresizingMaskIntoConstraints="NO" id="Ujw-UO-7Mi">
-                                            <rect key="frame" x="-3.3333333333333321" y="0.0" width="44" height="44"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navi_back" translatesAutoresizingMaskIntoConstraints="NO" id="Ujw-UO-7Mi" customClass="KHImageView" customModule="FakeWeather" customModuleProvider="target">
+                                            <rect key="frame" x="6" y="0.0" width="25" height="44"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="Ujw-UO-7Mi" secondAttribute="height" multiplier="1:1" id="kuN-HE-Kme"/>
+                                                <constraint firstAttribute="width" secondItem="Ujw-UO-7Mi" secondAttribute="height" multiplier="25:44" id="kuN-HE-Kme"/>
                                             </constraints>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00Y-7V-fDv">

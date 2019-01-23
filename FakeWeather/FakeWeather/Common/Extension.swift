@@ -128,7 +128,11 @@ extension String {
     }
     
     var text: String {
-        return (self.count > 0) ? self : "Không có".localized
+        return (self.count > 0) ? self : "Không có"
+    }
+    
+    var degree: String {
+        return (self.count > 0) ? self + " °" : "Không có".localized
     }
     
     var isAlphabet: Bool {
@@ -611,5 +615,27 @@ extension UITableView: UITableViewDelegate {
             fatalError("Could not dequeue header with identifier: \(Cell.reuseIdentifier)")
         }
         return header
+    }
+}
+
+extension UIApplication {
+    
+    var screenShot: UIImage?  {
+        return keyWindow?.layer.screenShot
+    }
+}
+
+extension CALayer {
+    
+    var screenShot: UIImage?  {
+        let scale = UIScreen.main.scale
+        UIGraphicsBeginImageContextWithOptions(frame.size, false, scale)
+        if let context = UIGraphicsGetCurrentContext() {
+            render(in: context)
+            let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            return screenshot
+        }
+        return nil
     }
 }

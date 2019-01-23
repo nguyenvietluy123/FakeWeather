@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryVC" customModule="FakeWeather" customModuleProvider="target">
             <connections>
+                <outlet property="bannerView" destination="9Vo-xQ-euC" id="KNK-WK-s02"/>
+                <outlet property="navi" destination="Pt9-nM-oDH" id="Ry0-r4-hLG"/>
+                <outlet property="tableView" destination="cZB-pl-VBZ" id="iOl-nM-bSm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,21 +34,35 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="hasLeft" value="NO"/>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cZB-pl-VBZ">
-                    <rect key="frame" x="0.0" y="70" width="375" height="517"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cZB-pl-VBZ">
+                    <rect key="frame" x="0.0" y="70" width="375" height="549"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ifT-FI-fv0"/>
+                        <outlet property="delegate" destination="-1" id="V8o-07-1Bq"/>
+                    </connections>
                 </tableView>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Vo-xQ-euC" customClass="GADBannerView">
+                    <rect key="frame" x="0.0" y="619" width="375" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Pt9-nM-oDH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ElM-Va-DZ9"/>
                 <constraint firstAttribute="trailing" secondItem="Pt9-nM-oDH" secondAttribute="trailing" id="LxB-w1-Dl1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9Vo-xQ-euC" secondAttribute="bottom" constant="-2" id="M0p-CK-dvg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cZB-pl-VBZ" secondAttribute="trailing" id="MT4-yK-tUN"/>
+                <constraint firstItem="9Vo-xQ-euC" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="50:667" id="PeE-pc-Mb3"/>
+                <constraint firstItem="9Vo-xQ-euC" firstAttribute="top" secondItem="cZB-pl-VBZ" secondAttribute="bottom" id="YPJ-ax-BFf"/>
                 <constraint firstItem="Pt9-nM-oDH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kJQ-jO-tqV"/>
                 <constraint firstItem="cZB-pl-VBZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lyH-ut-4xR"/>
+                <constraint firstAttribute="trailing" secondItem="9Vo-xQ-euC" secondAttribute="trailing" id="w81-bG-zUg"/>
                 <constraint firstItem="cZB-pl-VBZ" firstAttribute="top" secondItem="Pt9-nM-oDH" secondAttribute="bottom" id="xPU-Tp-PoS"/>
+                <constraint firstItem="9Vo-xQ-euC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="z1A-Pe-MXr"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="130.40000000000001" y="121.88905547226388"/>
         </view>
     </objects>
 </document>

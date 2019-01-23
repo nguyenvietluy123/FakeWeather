@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoriteVC" customModule="FakeWeather" customModuleProvider="target">
+            <connections>
+                <outlet property="navi" destination="Rua-2j-n1d" id="i8P-iC-37R"/>
+                <outlet property="tableView" destination="kD8-37-JN2" id="Ood-Xv-kdQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rua-2j-n1d" customClass="NavigationView" customModule="FakeWeather" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="UOP-DM-LpZ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Favorite"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasLeft" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kD8-37-JN2">
+                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="b1H-ID-Vw7"/>
+                        <outlet property="delegate" destination="-1" id="UZo-hk-SbG"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Rua-2j-n1d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AYW-d8-c2K"/>
+                <constraint firstItem="kD8-37-JN2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ade-MS-aiO"/>
+                <constraint firstItem="kD8-37-JN2" firstAttribute="top" secondItem="Rua-2j-n1d" secondAttribute="bottom" id="DhW-rf-I50"/>
+                <constraint firstAttribute="bottom" secondItem="kD8-37-JN2" secondAttribute="bottom" id="Jto-BN-AF8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kD8-37-JN2" secondAttribute="trailing" id="Kul-6o-dYP"/>
+                <constraint firstItem="Rua-2j-n1d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NZM-4p-pED"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rua-2j-n1d" secondAttribute="trailing" id="NzL-nG-6FB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

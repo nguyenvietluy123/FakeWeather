@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OvercastVC" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OvercastVC" customModule="FakeWeather" customModuleProvider="target">
             <connections>
+                <outlet property="navi" destination="vvO-hJ-RAz" id="Pa0-Sa-ist"/>
+                <outlet property="tableView" destination="L5y-bl-Sas" id="9qm-0f-hSg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,7 +21,38 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvO-hJ-RAz" customClass="NavigationView" customModule="FakeWeather" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="tUm-jM-O1Y"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Weather Condition"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasLeft" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasCancel" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L5y-bl-Sas">
+                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lwU-aq-bdo"/>
+                        <outlet property="delegate" destination="-1" id="3m6-1b-ZY1"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vvO-hJ-RAz" secondAttribute="trailing" id="0AQ-cA-zDS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="L5y-bl-Sas" secondAttribute="trailing" id="8Ij-g1-b7G"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="L5y-bl-Sas" secondAttribute="bottom" id="NVd-1y-HWF"/>
+                <constraint firstItem="L5y-bl-Sas" firstAttribute="top" secondItem="vvO-hJ-RAz" secondAttribute="bottom" id="YwH-4y-U3t"/>
+                <constraint firstItem="vvO-hJ-RAz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gRb-F2-FBL"/>
+                <constraint firstItem="vvO-hJ-RAz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="t0I-mL-bjQ"/>
+                <constraint firstItem="L5y-bl-Sas" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="v6u-GT-vrY"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

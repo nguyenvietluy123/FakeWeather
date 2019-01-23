@@ -9,44 +9,53 @@
 import UIKit
 import CoreData
 import IQKeyboardManagerSwift
+import GoogleMobileAds
+
+let kAdmobAppID         = "ca-app-pub-1947012962477196~8459063867"
+let kAdmobBanner        = "ca-app-pub-1947012962477196/2412530261"
+let kAdmobInterstitial  = "ca-app-pub-1947012962477196/2272929463"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var tabVC: UITabBarController?
-
+    var orientationLock = UIInterfaceOrientationMask.portrait
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        if !isIPad {
-            IQKeyboardManager.shared.enable = true
-            IQKeyboardManager.shared.toolbarTintColor = .darkGray
-            IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "Ẩn"
-        }
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.toolbarTintColor = .black
+        IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "Hide"
+        GADMobileAds.configure(withApplicationID: kAdmobAppID)
         
         initTabVC(0)
         return true
     }
     
     func initTabVC(_ index: Int){
-            tabVC = UITabBarController()
-            tabVC?.tabBar.isHidden = false
-            tabVC?.tabBar.isTranslucent = true
-            let tabHome = HomeVC(nibName:"HomeVC",bundle: nil)
-            tabHome.tabBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "tab_home"), selectedImage: #imageLiteral(resourceName: "icon_home_selected"))
-            let navHome = UINavigationController(rootViewController: tabHome)
-            navHome.isNavigationBarHidden = true
-            let tabHistory = HistoryVC(nibName:"HistoryVC",bundle: nil)
-            tabHistory.tabBarItem = UITabBarItem(title: "History", image: #imageLiteral(resourceName: "tab_history"), selectedImage: #imageLiteral(resourceName: "tab_history_selected"))
-            let navHistory = UINavigationController(rootViewController: tabHistory)
-            navHistory.isNavigationBarHidden = true
-            let tabSetting = SettingVC(nibName:"SettingVC",bundle: nil)
-            tabSetting.tabBarItem = UITabBarItem(title: "Setting", image: #imageLiteral(resourceName: "tab_setting"), selectedImage: #imageLiteral(resourceName: "tab_setting_selected"))
-            let navSetting = UINavigationController(rootViewController: tabSetting)
-            navSetting.isNavigationBarHidden = true
-            tabVC?.viewControllers = [navHome, navHistory, navSetting]
-            tabVC?.selectedIndex = index
-            window?.rootViewController = tabVC
-            window?.makeKeyAndVisible()
+        tabVC = UITabBarController()
+        tabVC?.tabBar.isHidden = false
+        tabVC?.tabBar.isTranslucent = false
+        let tabHome = HomeVC(nibName:"HomeVC",bundle: nil)
+        tabHome.tabBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "tab_home"), selectedImage: #imageLiteral(resourceName: "icon_home_selected"))
+        let navHome = UINavigationController(rootViewController: tabHome)
+        navHome.isNavigationBarHidden = true
+        let tabHistory = HistoryVC(nibName:"HistoryVC",bundle: nil)
+        tabHistory.tabBarItem = UITabBarItem(title: "History", image: #imageLiteral(resourceName: "tab_history"), selectedImage: #imageLiteral(resourceName: "tab_history_selected"))
+        let navHistory = UINavigationController(rootViewController: tabHistory)
+        navHistory.isNavigationBarHidden = true
+        let tabSetting = SettingVC(nibName:"SettingVC",bundle: nil)
+        tabSetting.tabBarItem = UITabBarItem(title: "Setting", image: #imageLiteral(resourceName: "tab_setting"), selectedImage: #imageLiteral(resourceName: "tab_setting_selected"))
+        let navSetting = UINavigationController(rootViewController: tabSetting)
+        navSetting.isNavigationBarHidden = true
+        tabVC?.viewControllers = [navHome, navHistory, navSetting]
+        tabVC?.selectedIndex = index
+        window?.rootViewController = tabVC
+        window?.makeKeyAndVisible()
+    }
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return self.orientationLock
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

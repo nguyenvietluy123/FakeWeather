@@ -11,6 +11,7 @@ import UIKit
 class NavigationView: UIView {
     @IBOutlet weak var lbTitleNav: KHLabel!
     @IBOutlet weak var viewLeft: UIView!
+    @IBOutlet weak var imgLeft: KHImageView!
     
     @IBInspectable open var title: String = "" {
         didSet {
@@ -21,6 +22,12 @@ class NavigationView: UIView {
     @IBInspectable open var hasLeft: Bool = false {
         didSet {
             viewLeft.isHidden = !hasLeft
+        }
+    }
+    
+    @IBInspectable open var hasCancel: Bool = false {
+        didSet {
+            imgLeft.image = hasCancel ? #imageLiteral(resourceName: "navi_cancel") : #imageLiteral(resourceName: "Rain")
         }
     }
     

@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingVC" customModule="FakeWeather" customModuleProvider="target">
             <connections>
+                <outlet property="bannerView" destination="0Sx-Co-mvx" id="ijK-fy-YED"/>
+                <outlet property="navi" destination="dfT-oa-cKl" id="J12-Gn-ZAU"/>
+                <outlet property="tableView" destination="udq-Dk-8Hx" id="bjJ-9G-Pmt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,8 +22,47 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfT-oa-cKl" customClass="NavigationView" customModule="FakeWeather" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="dAt-zx-JhW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Setting"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasLeft" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="udq-Dk-8Hx">
+                    <rect key="frame" x="0.0" y="70" width="375" height="549"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="7qc-yK-RLD"/>
+                        <outlet property="delegate" destination="-1" id="GKs-jv-R3d"/>
+                    </connections>
+                </tableView>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Sx-Co-mvx" customClass="GADBannerView">
+                    <rect key="frame" x="0.0" y="619" width="375" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0Sx-Co-mvx" secondAttribute="trailing" id="8Xx-AE-bmT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0Sx-Co-mvx" secondAttribute="bottom" constant="-2" id="G3j-v5-jix"/>
+                <constraint firstItem="udq-Dk-8Hx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M1n-Zo-CDZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dfT-oa-cKl" secondAttribute="trailing" id="MIW-5X-6pw"/>
+                <constraint firstItem="dfT-oa-cKl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="THD-CD-nXg"/>
+                <constraint firstItem="0Sx-Co-mvx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ala-6q-6pj"/>
+                <constraint firstItem="0Sx-Co-mvx" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="50:667" id="gDU-hn-ygC"/>
+                <constraint firstItem="0Sx-Co-mvx" firstAttribute="top" secondItem="udq-Dk-8Hx" secondAttribute="bottom" id="hwc-Ux-fge"/>
+                <constraint firstItem="udq-Dk-8Hx" firstAttribute="top" secondItem="dfT-oa-cKl" secondAttribute="bottom" id="l8J-7v-HdB"/>
+                <constraint firstItem="dfT-oa-cKl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pXk-dT-hRD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="udq-Dk-8Hx" secondAttribute="trailing" id="wVY-Hx-xEW"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="130.40000000000001" y="121.88905547226388"/>
         </view>
     </objects>
 </document>

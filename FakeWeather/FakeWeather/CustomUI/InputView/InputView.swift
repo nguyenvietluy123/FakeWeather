@@ -62,9 +62,15 @@ class InputView: UIView {
         }
     }
     
+    @IBInspectable open var placeholder: String = "" {
+        didSet {
+            tfValue.placeholder = placeholder
+        }
+    }
+    
     var textOutput: String = ""
     var handleSelectItem: (() -> ())?
-    var handleTypeTemp: ((typeTemp) -> ())?
+    var handleTypeTemp: ((TypeTemp) -> ())?
     
     @IBAction func actionSelect(_ sender: Any) {
         handleSelectItem?()
@@ -101,7 +107,7 @@ class InputView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         GCDCommon.mainQueue {
-            self.viewSelection.roundCorners(corners: [.topRight, .bottomRight], radius: 6, showBorder: true)
+            self.viewSelection.roundCorners(corners: [.topRight, .bottomRight], radius: 6*heightRatio, showBorder: true)
         }
     }
     

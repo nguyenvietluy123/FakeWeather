@@ -75,7 +75,7 @@ class CameraHelper: NSObject {
                 imagePicker.cameraDevice = frontCamera
             }
         } else {
-            Common.showAlert("txt_valid_camera")
+            Common.showAlert("Cannot access the camera")
             return
         }
         

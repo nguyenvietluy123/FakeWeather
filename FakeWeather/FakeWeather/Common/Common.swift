@@ -17,8 +17,8 @@ let TAppDelegate = UIApplication.shared.delegate as! AppDelegate
 class Common {
     static func showAlert(_ strMessage: String){
         self.dismissAllAlert()
-        let alert = AlertController(title: "app_name".localized, message: strMessage.localized, preferredStyle: UIAlertController.Style.alert)
-        let okAction: UIAlertAction = UIAlertAction(title: "txt_ok".localized, style: .cancel) { action -> Void in
+        let alert = AlertController(title: "Fake Weather".localized, message: strMessage.localized, preferredStyle: UIAlertController.Style.alert)
+        let okAction: UIAlertAction = UIAlertAction(title: "OK".localized, style: .cancel) { action -> Void in
             
         }
         self.addNotificationCenter(observer: alert, selector: #selector(AlertController.hideAlertController), key: NotificationCenterKey.DismissAllAlert)

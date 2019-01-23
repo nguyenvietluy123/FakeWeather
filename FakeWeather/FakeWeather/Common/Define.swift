@@ -17,9 +17,14 @@ let ctrTopCellDetail = (isIPad) ? 20 : 15*heightRatio
 let heightCellContact = (isIPad) ? 60 : 45*heightRatio
 let heightTitleCollapse = (isIPad) ? 70 : 50*heightRatio
 
-enum typeTemp {
-    case tempC
-    case tempF
+enum TypeTemp: String {
+    case tempC = "tempC"
+    case tempF = "tempF"
+}
+
+enum PushFrom {
+    case homeVC
+    case historyVC
 }
 
 enum SaveKey: String {
@@ -35,10 +40,6 @@ class NotificationCenterKey {
     static let SelectedMenu = "SelectedMenu"
     static let DismissAllAlert = "DismissAllAlert"
     static let ReloadMap = "ReloadMap"
-}
-
-class Key {
-    static let keyMap = "AIzaSyDqXq6POMT9b3bjBqWVYnVRhD_EcSE01-4"
 }
 
 class TColor {
